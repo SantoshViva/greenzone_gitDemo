@@ -1,0 +1,52 @@
+2023-07-19T19:19:04.620-0400 [main] INFO  o.s.t.c.s.AbstractContextLoader      Could not detect default resource locations for test class [com.santosh.greenzone.main.MainApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-07-19T19:19:04.654-0400 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils Could not detect default configuration classes for test class [com.santosh.greenzone.main.MainApplicationTests]: MainApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-07-19T19:19:07.251-0400 [main] INFO  c.s.g.m.MainApplicationTests         Starting MainApplicationTests on Home with PID 6264 (started by santosh in E:\STS\sts-4.6.0.RELEASE\workspace-spring-tool-suite-4-4.6.0.RELEASE\greenzone_crbt_muni_starToCopyProcess)
+2023-07-19T19:19:07.252-0400 [main] INFO  c.s.g.m.MainApplicationTests         No active profile set, falling back to default profiles: default
+2023-07-19T19:19:09.944-0400 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-19T19:19:09.996-0400 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+2023-07-19T19:19:10.738-0400 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11ff2798] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-19T19:19:11.298-0400 [main] INFO  c.z.h.HikariDataSource               HikariPool-1 - Starting...
+2023-07-19T19:19:11.301-0400 [main] WARN  c.z.h.u.DriverDataSource             Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-07-19T19:19:12.657-0400 [main] INFO  c.z.h.HikariDataSource               HikariPool-1 - Start completed.
+2023-07-19T19:19:12.889-0400 [main] INFO  o.h.j.i.u.LogHelper                  HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-07-19T19:19:13.109-0400 [main] INFO  o.h.Version                          HHH000412: Hibernate Core {5.3.7.Final}
+2023-07-19T19:19:13.111-0400 [main] INFO  o.h.c.Environment                    HHH000206: hibernate.properties not found
+2023-07-19T19:19:13.575-0400 [main] INFO  o.h.a.c.Version                      HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-07-19T19:19:13.804-0400 [main] INFO  o.h.d.Dialect                        HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-07-19T19:19:14.287-0400 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-19T19:19:14.354-0400 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor       Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-19T19:19:14.768-0400 [main] INFO  c.s.g.m.ExecutorBase                 Running thread
+2023-07-19T19:19:14.771-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    NOTIFICATION_SMS_ENABLE=Y|NOTIFICATION_SMS_INTERVAL=300|smsHourStart=12|smsHourEnd=20|hourSleepDuration=100000
+2023-07-19T19:19:14.771-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    Start Notification
+2023-07-19T19:19:14.771-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    No Black Hours
+2023-07-19T19:19:14.771-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    query=select id, aparty,bparty,tone_id,aparty_rbt_flag,service_id,product_id,tone_service_id,tone_product_id,is_tone_charge from CRBT_ASYNC_START_TO_COPY_INFO where status='A' order by start_time ;
+2023-07-19T19:19:14.839-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    for loop started
+2023-07-19T19:19:14.840-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    Details|aparty=810594999|bparty=810594996|toneId=111111111111|apartyRbtFlag=N|serviceId=crbt|productId=DAILY_RBT|toneServiceId=A|toneProductId=A|isToneCharge=N
+2023-07-19T19:19:14.841-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    jsonCrbtBodyData={
+ "cpid": "CRBT",
+ "msisdn": "810594999",
+ "tid": "01cb1d7d-00ff-49de-a60b-523c2208b893",
+ "action" :"SUBSCRIPTION",
+ "serviceid" :"SUBS_RENTAL",
+ "productid" :"DAILY_RBT",
+ "langid" :"en",
+ "interfacename" :"IVR",
+ "timestamp" :"20230719191914",
+ "issubcharge" :"Y",
+ "toneid" :"111111111111",
+ "tonetype" :"0",
+ "tonetypeidx" :"1",
+ "tonename" :"null",
+ "precrbtflag" :"",
+ "callingpartynumber" :"D",
+ "toneserviceid" :"TONE_RENTAL",
+ "toneproductid" :"TONE_LIFETIME",
+ "istonecharge" :"N"
+}
+2023-07-19T19:19:17.050-0400 [main] INFO  c.s.g.m.MainApplicationTests         Started MainApplicationTests in 11.158 seconds (JVM running for 16.626)
+2023-07-19T19:19:17.280-0400 [Thread-3] INFO  o.s.s.c.ThreadPoolTaskExecutor       Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-19T19:19:17.281-0400 [Thread-3] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-19T19:19:17.285-0400 [Thread-3] INFO  c.z.h.HikariDataSource               HikariPool-1 - Shutdown initiated...
+2023-07-19T19:19:17.309-0400 [Thread-3] INFO  c.z.h.HikariDataSource               HikariPool-1 - Shutdown completed.

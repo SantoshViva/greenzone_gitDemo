@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.3.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.santosh.greenzone</groupId>
+	<artifactId>greenzone-gitSample</artifactId>
+	<!-- 1.0.9: Added like Dislike SMS -->
+	<!-- 1.0.10: Added BlackList -->
+	<!-- 1.0.11: Added Thread -->
+	<!-- 1.0.12: SEND SMS NOTIFICATION -->
+	<!-- 1.0.13: Changes for GUI API -->
+	<!-- 1.0.14: Added Msisdn wise chat for GUI API -->
+	<!-- 1.0.15: Change for new chat flow 3Nov2022 -->
+	<!-- 1.0.16: Change for new profile query API implementation -->
+	<!-- 1.0.17: Added Id in chat message 14-Dec-2022 -->
+	<!-- 1.0.18: Added for add backlist number functionality  -->
+	<!-- 1.0.19: Added for add whitelist api for services -16-Jan-23  -->
+	<!-- 1.0.20: New Changes for user management 24-Jan-23  -->
+	<!-- 1.0.21: Add CHAT GUI message path to configuration -->
+	<!-- 1.0.22: Bug Fix on Chat profile -->
+	<!-- Reployed this 1.0.22 on Hormuud production server at 21-Feb-2023 -->
+	<!-- Added New thread for Asys StarToCopy Data 17-July-2023 -->
+	<version>1.0.25-SNAPSHOT</version>
+	<name>greenzone-starToCopy</name>
+	<packaging>jar</packaging>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		
+		<!-- exclude default logging logback using exclusion tag, add log4j2 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+		<!-- include log4j2 dependency here  -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+        
+		
+		
+		
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.10.2</version>
+		</dependency>
+		<!-- JSON -->
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20190722</version>
+		</dependency>
+		
+
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml -->
+		<!-- <dependency> 
+		     <groupId>com.fasterxml.jackson.dataformat</groupId> 
+		     <artifactId>jackson-dataformat-xml</artifactId> 
+			 <version>2.11.1</version> 
+			</dependency> 
+			https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind 
+			<dependency> 
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId> 
+			<version>2.9.4</version> </dependency> -->
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

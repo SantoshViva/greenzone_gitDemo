@@ -1,0 +1,71 @@
+2023-07-15T18:15:44.175-0400 [main] INFO  c.s.g.m.MainApplication              Starting MainApplication on Home with PID 2088 (E:\STS\sts-4.6.0.RELEASE\workspace-spring-tool-suite-4-4.6.0.RELEASE\greenzone_crbt_muni_starToCopyProcess\target\classes started by santosh in E:\STS\sts-4.6.0.RELEASE\workspace-spring-tool-suite-4-4.6.0.RELEASE\greenzone_crbt_muni_starToCopyProcess)
+2023-07-15T18:15:44.182-0400 [main] INFO  c.s.g.m.MainApplication              No active profile set, falling back to default profiles: default
+2023-07-15T18:15:44.826-0400 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate Bootstrapping Spring Data repositories in DEFAULT mode.
+2023-07-15T18:15:44.846-0400 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+2023-07-15T18:15:45.109-0400 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b4628fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-15T18:15:45.488-0400 [main] INFO  o.a.c.h.Http11NioProtocol            Initializing ProtocolHandler ["http-nio-9578"]
+2023-07-15T18:15:45.496-0400 [main] INFO  o.a.c.c.StandardService              Starting service [Tomcat]
+2023-07-15T18:15:45.497-0400 [main] INFO  o.a.c.c.StandardEngine               Starting Servlet engine: [Apache Tomcat/9.0.16]
+2023-07-15T18:15:45.507-0400 [main] INFO  o.a.c.c.AprLifecycleListener         The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_74\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_74/bin/server;C:/Program Files/Java/jre1.8.0_74/bin;C:/Program Files/Java/jre1.8.0_74/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\cygwin64\bin\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;E:\VisualStudioCode\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\santosh\AppData\Roaming\npm;C:\Users\santosh\AppData\Local\atom\bin;C:\cygwin64\bin;C:\Program Files (x86)\Sophos\Sophos SSL VPN Client\bin;E:\STS\sts-4.6.0.RELEASE;;.]
+2023-07-15T18:15:45.598-0400 [main] INFO  o.a.c.c.C.[.[.[/]                    Initializing Spring embedded WebApplicationContext
+2023-07-15T18:15:45.599-0400 [main] INFO  o.s.w.c.ContextLoader                Root WebApplicationContext: initialization completed in 1378 ms
+2023-07-15T18:15:45.738-0400 [main] INFO  c.z.h.HikariDataSource               HikariPool-1 - Starting...
+2023-07-15T18:15:45.740-0400 [main] WARN  c.z.h.u.DriverDataSource             Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-07-15T18:15:46.045-0400 [main] INFO  c.z.h.HikariDataSource               HikariPool-1 - Start completed.
+2023-07-15T18:15:46.092-0400 [main] INFO  o.h.j.i.u.LogHelper                  HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-07-15T18:15:46.141-0400 [main] INFO  o.h.Version                          HHH000412: Hibernate Core {5.3.7.Final}
+2023-07-15T18:15:46.142-0400 [main] INFO  o.h.c.Environment                    HHH000206: hibernate.properties not found
+2023-07-15T18:15:46.270-0400 [main] INFO  o.h.a.c.Version                      HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-07-15T18:15:46.404-0400 [main] INFO  o.h.d.Dialect                        HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-07-15T18:15:46.713-0400 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-15T18:15:46.760-0400 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor       Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-15T18:15:46.777-0400 [main] INFO  c.s.g.m.ExecutorBase                 Running thread
+2023-07-15T18:15:46.778-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    NOTIFICATION_SMS_ENABLE=Y|NOTIFICATION_SMS_INTERVAL=300|smsHourStart=12|smsHourEnd=20|hourSleepDuration=100000
+2023-07-15T18:15:46.778-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    Start Notification
+2023-07-15T18:15:46.778-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    No Black Hours
+2023-07-15T18:15:46.778-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    query=select id, aparty,bparty,tone_id,aparty_rbt_flag,service_id,product_id,tone_service_id,tone_product_id,is_tone_charge from CRBT_ASYNC_START_TO_COPY_INFO where status='A' order by start_time ;
+2023-07-15T18:15:46.785-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    for loop started
+2023-07-15T18:15:46.786-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    Details|aparty=810594999|bparty=810594996|toneId=111111111111|apartyRbtFlag=N|serviceId=crbt|productId=DAILY_RBT|toneServiceId=A|toneProductId=A|isToneCharge=A
+2023-07-15T18:15:46.786-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    jsonCrbtBodyData={
+ "cpid": "CRBT",
+ "msisdn": "810594999",
+ "tid": "9bcdb33f-2937-44f4-b519-ffc76216ea86",
+ "action" :"SUBSCRIPTION",
+ "serviceid" :"SUBS_RENTAL",
+ "productid" :"DAILY_RBT",
+ "langid" :"en",
+ "interfacename" :"IVR",
+ "timestamp" :"20230715181546",
+ "issubcharge" :"Y",
+ "toneid" :"Top_ten_1",
+ "tonetype" :"0",
+ "tonetypeidx" :"1",
+ "tonename" :"null",
+ "precrbtflag" :"",
+ "callingpartynumber" :"D",
+ "toneserviceid" :"TONE_RENTAL",
+ "toneproductid" :"TONE_LIFETIME",
+ "istonecharge" :"N"
+}
+2023-07-15T18:15:47.200-0400 [main] INFO  o.a.c.h.Http11NioProtocol            Starting ProtocolHandler ["http-nio-9578"]
+2023-07-15T18:15:47.223-0400 [main] INFO  c.s.g.m.MainApplication              Started MainApplication in 3.349 seconds (JVM running for 4.563)
+2023-07-15T18:15:56.904-0400 [task-1] ERROR c.s.g.s.i.PostClientCrbtServiceImpl  Reosource Access Exception=I/O error on POST request for "http://172.16.53.116:7070/crbt/core/subscription": connect timed out; nested exception is java.net.SocketTimeoutException: connect timed out
+2023-07-15T18:15:56.904-0400 [task-1] ERROR c.s.g.s.i.PostClientCrbtServiceImpl  Reosource Access Exception=java.net.SocketTimeoutException: connect timed out
+2023-07-15T18:15:56.904-0400 [task-1] INFO  c.s.g.s.i.PostClientCrbtServiceImpl  response result|returnValue=E
+2023-07-15T18:15:57.076-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    Successful update|result=1
+2023-07-15T18:15:57.076-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    For loop finished
+2023-07-15T18:15:57.076-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    Finished query result|blackHours=N
+2023-07-15T18:15:57.076-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    Go to sleep
+2023-07-15T18:16:52.070-0400 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.s.c.ThreadPoolTaskExecutor       Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-15T18:16:52.070-0400 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-15T18:16:52.070-0400 [task-1] ERROR c.s.g.m.c.StarToCopyProcessThread    Exception occurred|sleepEX=java.lang.InterruptedException: sleep interrupted
+2023-07-15T18:16:52.071-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    end while loop
+2023-07-15T18:16:52.071-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    No Black Hours
+2023-07-15T18:16:52.071-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    query=select id, aparty,bparty,tone_id,aparty_rbt_flag,service_id,product_id,tone_service_id,tone_product_id,is_tone_charge from CRBT_ASYNC_START_TO_COPY_INFO where status='A' order by start_time ;
+2023-07-15T18:16:52.076-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    No record found
+2023-07-15T18:16:52.076-0400 [RMI TCP Connection(11)-127.0.0.1] INFO  c.z.h.HikariDataSource               HikariPool-1 - Shutdown initiated...
+2023-07-15T18:16:52.081-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    Finished query result|blackHours=N
+2023-07-15T18:16:52.081-0400 [task-1] INFO  c.s.g.m.c.StarToCopyProcessThread    Go to sleep
+2023-07-15T18:16:52.083-0400 [RMI TCP Connection(11)-127.0.0.1] INFO  c.z.h.HikariDataSource               HikariPool-1 - Shutdown completed.
