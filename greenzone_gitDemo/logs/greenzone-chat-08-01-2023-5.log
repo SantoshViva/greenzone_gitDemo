@@ -1,0 +1,2 @@
+2023-08-03T13:43:20.579+0530 [main] INFO  o.s.t.c.s.AbstractContextLoader      Could not detect default resource locations for test class [com.santosh.greenzone.main.MainApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-08-03T13:43:20.587+0530 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils Could not detect default configuration classes for test class [com.santosh.greenzone.main.MainApplicationTests]: MainApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.

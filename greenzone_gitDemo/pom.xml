@@ -27,7 +27,7 @@
 	<!-- 1.0.22: Bug Fix on Chat profile -->
 	<!-- Reployed this 1.0.22 on Hormuud production server at 21-Feb-2023 -->
 	<!-- Added New thread for Asys StarToCopy Data 17-July-2023 -->
-	<version>1.0.25-SNAPSHOT</version>
+	<version>1.0.26-SNAPSHOT</version>
 	<name>greenzone-starToCopy</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
